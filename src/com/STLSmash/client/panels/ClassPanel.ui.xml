@@ -1,0 +1,76 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:g="urn:import:org.gwtbootstrap3.client.ui.gwt"
+             xmlns:select="urn:import:org.gwtbootstrap3.extras.select.client.ui"
+             xmlns:html="urn:import:org.gwtbootstrap3.client.ui.html">
+    <html:Div>
+        <b:Row>
+            <b:Column size="XS_12">
+                <b:Form type="HORIZONTAL">
+                    <b:FormLabel for="formCountry" addStyleNames="col-xs-1">Level</b:FormLabel>
+                    <g:FlowPanel addStyleNames="col-xs-1">
+                        <b:ListBox b:id="formCountry">
+                            <g:item>1</g:item>
+                            <g:item>2</g:item>
+                            <g:item>3</g:item>
+                            <g:item>4</g:item>
+                            <g:item>5</g:item>
+                            <g:item>6</g:item>
+                            <g:item>7</g:item>
+                            <g:item>8</g:item>
+                            <g:item>9</g:item>
+                            <g:item>10</g:item>
+                            <g:item>11</g:item>
+                            <g:item>12</g:item>
+                            <g:item>13</g:item>
+                            <g:item>14</g:item>
+                            <g:item>15</g:item>
+                            <g:item>16</g:item>
+                            <g:item>17</g:item>
+                            <g:item>18</g:item>
+                            <g:item>19</g:item>
+                            <g:item>20</g:item>
+                        </b:ListBox>
+                    </g:FlowPanel>
+                </b:Form>
+                <b:Button text="Multiclass" icon="PLUS_SQUARE"/>
+            </b:Column>
+        </b:Row>
+        <b:Row>
+            <b:Column size="XS_2">
+                <b:NavPills stacked="true">
+                    <b:TabListItem dataTarget="#BarbarianPane" text="Barbarian"/>
+                    <b:TabListItem dataTarget="#BardPane" text="Bard"/>
+                    <b:TabListItem dataTarget="#ClericPane" text="Cleric"/>
+                    <b:TabListItem dataTarget="#DruidPane" text="Druid"/>
+                    <b:TabListItem dataTarget="#FighterPane" text="Fighter"/>
+                    <b:TabListItem dataTarget="#MonkPane" text="Monk"/>
+                    <b:TabListItem dataTarget="#PaladinPane" text="Paladin"/>
+                    <b:TabListItem dataTarget="#RangerPane" text="Ranger"/>
+                    <b:TabListItem dataTarget="#RoguePane" text="Rogue"/>
+                    <b:TabListItem dataTarget="#SorcererPane" text="Sorcerer"/>
+                    <b:TabListItem dataTarget="#WarlockPane" text="Warlock"/>
+                    <b:TabListItem dataTarget="#WizardPane" text="Wizard"/>
+                </b:NavPills>
+            </b:Column>
+            <b:Column size="XS_10">
+                <b:TabContent>
+                    <b:TabPane visible="true" fade="true" b:id="BarbarianPane">
+                        <b:TabPanel ui:field="barbarianPanel"/>
+                    </b:TabPane>
+                    <b:TabPane fade="true" b:id="BardPane"/>
+                    <b:TabPane fade="true" b:id="ClericPane"/>
+                    <b:TabPane fade="true" b:id="DruidPane"/>
+                    <b:TabPane fade="true" b:id="FighterPane"/>
+                    <b:TabPane fade="true" b:id="MonkPane"/>
+                    <b:TabPane fade="true" b:id="PaladinPane"/>
+                    <b:TabPane fade="true" b:id="RangerPane"/>
+                    <b:TabPane fade="true" b:id="SorcererPane"/>
+                    <b:TabPane fade="true" b:id="WarlockPane"/>
+                    <b:TabPane fade="true" b:id="WizardPane"/>
+                </b:TabContent>
+            </b:Column>
+        </b:Row>
+    </html:Div>
+</ui:UiBinder>

@@ -1,0 +1,37 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:html="urn:import:org.gwtbootstrap3.client.ui.html">
+    <html:Div>
+        <b:Row>
+            <b:Column size="XS_2">
+                <b:NavPills stacked="true">
+                    <b:TabListItem dataTarget="#dwarfPane" text="Dwarf"/>
+                    <b:TabListItem dataTarget="#elfPane" text="Elf"/>
+                    <b:TabListItem dataTarget="#halflingPane" text="Halfling"/>
+                    <b:TabListItem dataTarget="#humanPane" text="Human"/>
+                    <b:TabListItem dataTarget="#dragonPane" text="DragonBorn"/>
+                    <b:TabListItem dataTarget="#gnomePane" text="Gnome"/>
+                    <b:TabListItem dataTarget="#halfElfPane" text="Half-Elf"/>
+                    <b:TabListItem dataTarget="#halfOrcPane" text="Half-Orc"/>
+                    <b:TabListItem dataTarget="#tieflingPane" text="Tiefling"/>
+                </b:NavPills>
+            </b:Column>
+            <b:Column size="XS_10">
+                    <b:TabContent>
+                        <b:TabPane visible="true" fade="true" b:id="dwarfPane">
+                            <b:TabPanel ui:field="dwarfPanel"/>
+                        </b:TabPane>
+                        <b:TabPane fade="true" b:id="elfPane"/>
+                        <b:TabPane fade="true" b:id="halflingPane"/>
+                        <b:TabPane fade="true" b:id="humanPane"/>
+                        <b:TabPane fade="true" b:id="dragonPane"/>
+                        <b:TabPane fade="true" b:id="gnomePane"/>
+                        <b:TabPane fade="true" b:id="halfElfPane"/>
+                        <b:TabPane fade="true" b:id="halfOrcPane"/>
+                        <b:TabPane fade="true" b:id="tieflingPane"/>
+                    </b:TabContent>
+            </b:Column>
+        </b:Row>
+    </html:Div>
+</ui:UiBinder>

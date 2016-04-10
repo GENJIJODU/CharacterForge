@@ -1,0 +1,175 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:gwt="urn:import:org.gwtbootstrap3.client.ui.gwt"
+             xmlns:html="urn:import:org.gwtbootstrap3.client.ui.html">
+    <html:Div>
+        <b:Column size="XS_10">
+            <b:Row>
+                <b:Column size="XS_3">
+                    <b:Panel>
+                        <b:PanelHeader text="Racial Traits"/>
+                        <b:PanelBody>
+                            <b:Row>
+                                <b:Column size="XS_12">
+                                    <html:Strong text="Ability Modifier: " paddingRight="10"/>
+                                    <html:Span text="+2 CON"/>
+                                </b:Column>
+                            </b:Row>
+                            <b:Row>
+                                <b:Column size="XS_12">
+                                    <html:Strong text="Size: " paddingRight="10"/>
+                                    <html:Span text="Medium"/>
+                                </b:Column>
+                            </b:Row>
+                            <b:Row>
+                                <b:Column size="XS_12">
+                                    <html:Strong text="Movement:" paddingRight="10"/>
+                                    <html:Span text="25ft"/>
+                                </b:Column>
+                            </b:Row>
+                        </b:PanelBody>
+                    </b:Panel>
+                </b:Column>
+                <b:Column size="XS_3">
+                    <b:Panel>
+                        <b:PanelHeader text="Languages"/>
+                        <b:PanelBody>
+                            <b:ListItem text="Common"/>
+                            <b:ListItem text="Dwarven"/>
+                        </b:PanelBody>
+                    </b:Panel>
+                </b:Column>
+                <b:Column size="XS_3">
+                    <b:Panel>
+                        <b:PanelHeader text="Weapon Proficiencies"/>
+                        <b:PanelBody>
+                            <b:ListItem text="Battleaxe"/>
+                            <b:ListItem text="Handaxe"/>
+                            <b:ListItem text="Throwing Hammer"/>
+                            <b:ListItem text="Warhammer"/>
+                        </b:PanelBody>
+                    </b:Panel>
+                </b:Column>
+                <b:Column size="XS_3">
+                    <b:Panel>
+                        <b:PanelHeader text="Tool Proficiencies"/>
+                        <b:PanelBody>
+                            <b:FormGroup>
+                                <b:InlineRadio formValue="value1" name="radio1" text="Smith's Tools" visible="false"/>
+                                <b:InlineRadio formValue="value1" name="radio1" text="Smith's Tools"/>
+                                <b:InlineRadio formValue="value2" name="radio1" text="Brewer's Supplies"/>
+                                <b:InlineRadio formValue="value3" name="radio1" text="Mason's Tools"/>
+                            </b:FormGroup>
+                        </b:PanelBody>
+                    </b:Panel>
+                </b:Column>
+            </b:Row>
+            <b:Row>
+                <b:Column size="XS_6">
+                    <b:Panel>
+                        <b:PanelHeader>
+                            <b:Anchor text="Stonecunning" dataToggle="COLLAPSE" dataTarget="#collapseStonecunning"/>
+                        </b:PanelHeader>
+                        <b:PanelCollapse b:id="collapseStonecunning">
+                            <b:PanelBody>
+                                <html:Span text="Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."/>
+                            </b:PanelBody>
+                        </b:PanelCollapse>
+                    </b:Panel>
+                </b:Column>
+                <b:Column size="XS_6">
+                    <b:Panel>
+                        <b:PanelHeader>
+                            <b:Anchor text="Dwarven Resilience" dataToggle="COLLAPSE" dataTarget="#collapseDwarvenResilience"/>
+                        </b:PanelHeader>
+                        <b:PanelCollapse b:id="collapseDwarvenResilience">
+                            <b:PanelBody>
+                                <html:Span text="Vou have advantage on saving throws against poison, and you have resistance against poison damage."/>
+                            </b:PanelBody>
+                        </b:PanelCollapse>
+                    </b:Panel>
+                </b:Column>
+            </b:Row>
+            <b:Row>
+                <b:Column size="XS_6">
+                    <b:Panel>
+                        <b:PanelHeader>
+                            <b:Anchor text="Darkvision" dataToggle="COLLAPSE" dataTarget="#collapseDarkvision"/>
+                        </b:PanelHeader>
+                        <b:PanelCollapse b:id="collapseDarkvision">
+                            <b:PanelBody>
+                                <html:Span text="Accustomed to life underground, you have superior vision in dark and dim conditions. Vou can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim lighl. Vou can't discern color in darkness, only shades of gray."/>
+                            </b:PanelBody>
+                        </b:PanelCollapse>
+                    </b:Panel>
+                </b:Column>
+                <b:Column size="XS_6">
+                    <b:Panel>
+                        <b:PanelHeader>
+                            <b:Anchor text="Alignment" dataToggle="COLLAPSE" dataTarget="#collapseAlignment"/>
+                        </b:PanelHeader>
+                        <b:PanelCollapse b:id="collapseAlignment">
+                            <b:PanelBody>
+                                <html:Span text="Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order."/>
+                            </b:PanelBody>
+                        </b:PanelCollapse>
+                    </b:Panel>
+                </b:Column>
+            </b:Row>
+            <b:Row>
+                <b:Column size="XS_12">
+                    <b:Panel>
+                        <b:PanelHeader text="Subraces"/>
+                        <b:PanelBody>
+                            <b:NavTabs>
+                                <b:TabListItem active="true" dataTarget="#hillDwarfTab">Hill Dwarf</b:TabListItem>
+                                <b:TabListItem dataTarget="#mountainDwarfTab">Mountain Dwarf</b:TabListItem>
+                            </b:NavTabs>
+                            <b:TabContent paddingTop="10">
+                                <b:TabPane fade="true" b:id="hillDwarfTab">
+                                    <b:Column size="XS_3">
+                                        <b:Panel>
+                                            <b:PanelHeader text="Ability Score Increase"/>
+                                            <b:PanelBody>
+                                                <b:Label text="WIS +1"/>
+                                            </b:PanelBody>
+                                        </b:Panel>
+                                    </b:Column>
+                                    <b:Column size="XS_6">
+                                        <b:Panel>
+                                            <b:PanelHeader text="Dwarven Toughness"/>
+                                            <b:PanelBody>
+                                                <html:Span text="Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."/>
+                                            </b:PanelBody>
+                                        </b:Panel>
+                                    </b:Column>
+                                </b:TabPane>
+                                <b:TabPane fade="true" b:id="mountainDwarfTab">
+                                    <b:Column size="XS_4">
+                                        <b:Panel>
+                                            <b:PanelHeader text="Subrace Traits"/>
+                                            <b:PanelBody>
+                                                <html:Strong text="Ability Modifier: "/>
+                                                <html:Span text="+2 STR"/>
+                                            </b:PanelBody>
+                                        </b:Panel>
+                                    </b:Column>
+                                    <b:Column size="XS_4">
+                                        <b:Panel>
+                                            <b:PanelHeader text="Armor Proficiencies"/>
+                                            <b:PanelBody>
+                                                <b:ListItem text="Light Armor"/>
+                                                <b:ListItem text="Medium Armor"/>
+                                            </b:PanelBody>
+                                        </b:Panel>
+                                    </b:Column>
+                                </b:TabPane>
+                            </b:TabContent>
+                        </b:PanelBody>
+                    </b:Panel>
+                </b:Column>
+            </b:Row>
+        </b:Column>
+    </html:Div>
+</ui:UiBinder>
